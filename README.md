@@ -12,14 +12,6 @@ Crop-disease-diagnosis
 │   │   add autoaugment_focus image.ipynb
 │   │  add scheduler early stopping.ipynb
 │   │	...
-│  
-│
-└───models
-│   │	cosineAnnealingLR densenet201.pt
-│   │	imagenet.pt
-│   │	epoch 20 augmentation.p
-│   │	imbalance 전.pt
-│   └──	res 50-lstm(1) 1e-4 epochs 10 transforms not 89 .pt
 │
 └───src
 │   │	preprocessing.ipynb
@@ -60,7 +52,7 @@ _Image.1 특정 잎 부분을 box로 표현했다. src/preprocessing.ipynb에서
 모든 파일을 clone후 적절한 src/train.ipynb 파일에 있는 경로를 바꾸면 된다.(데이터셋은 위에 경로에서 다운)
 
 - 모델 평가시
-src/inference.ipynb 파일에서 경로 변경 후 사용한다. 여기에 있는 모델을 사용할 경우 models에 있는 파일을 다운받아 사용하면 된다. 
+src/inference.ipynb 파일에서 경로 변경 후 사용한다. 깃허브에 모델을 저장 할수가 없었다. 만약 필요하다면 cjfghk5697@gmail.com으로 보내주겠습니다. 
 
 ## 느낀점
  대략 상위 10퍼 정도 결과를 얻을 수 있었다. 시계열 데이터와 이미지 데이터를 활용한 대회에서 꼭 시계열 데이터가 필요할 거 같지는 않다. 이번에 대회하면서 resampling, focus image, TTA, image 사이즈를 키워보는 등 여러시도를 해봤다. 하지만 전부 큰 효과를 보진 않았다.
